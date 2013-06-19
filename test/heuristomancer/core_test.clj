@@ -45,7 +45,16 @@
    ["mini-align.aln"       :clustalw]
    ["pep-266.aln"          :clustalw]
    ["testaln.aln"          :clustalw]
-   ["foo.codata"           :codata]])
+   ["foo.codata"           :codata]
+   ["foo.embl"             :embl]
+   ["test.embl"            :embl]
+   ["test.embl2sq"         :embl]
+   ["alnfile.fasta"        :fasta]
+   ["genomic-seq.fasta"    :fasta]
+   ["hs_owlmonkey.fasta"   :fasta]
+   ["test.fasta"           :fasta]
+   ["testaln.fasta"        :fasta]
+   ["testaln2.fasta"       :fasta]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))

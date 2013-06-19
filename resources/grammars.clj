@@ -8,4 +8,6 @@
  [:blast    "ebnf/blast.ebnf"]
  [:bowtie   "ebnf/bowtie.ebnf"]
  [:clustalw "ebnf/clustal.ebnf"]
- [:codata   "ebnf/codata.ebnf"]]
+ [:codata   "ebnf/codata.ebnf"]
+ [:embl     "ebnf/embl.ebnf"]
+ [:fasta    "ebnf/fasta.ebnf"]]
