@@ -1,1 +1,1 @@
-S = #"^(?:DNA|Peptide|Protein|Sequence) [\":].*"
+S = #"\s*(?:DNA|Peptide|Protein|Sequence) [\":][\s\S]*"
