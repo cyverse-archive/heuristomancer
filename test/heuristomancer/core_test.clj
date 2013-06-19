@@ -16,21 +16,26 @@
     (is (= expected (parse-test-file path)))))
 
 (def ^:private tests
-  [["foo.csh"            :csh]
-   ["foo.tcsh"           :tcsh]
-   ["foo.sh"             :sh]
-   ["foo.bash"           :bash]
-   ["foo.pl"             :perl]
-   ["foo.py"             :python]
-   ["dna-quote.ace"      :ace]
-   ["dna-colon.ace"      :ace]
-   ["peptide-quote.ace"  :ace]
-   ["peptide-colon.ace"  :ace]
-   ["protein-quote.ace"  :ace]
-   ["protein-colon.ace"  :ace]
-   ["sequence-quote.ace" :ace]
-   ["sequence-colon.ace" :ace]
-   ["test.ace"           :ace]])
+  [["foo.csh"              :csh]
+   ["foo.tcsh"             :tcsh]
+   ["foo.sh"               :sh]
+   ["foo.bash"             :bash]
+   ["foo.pl"               :perl]
+   ["foo.py"               :python]
+   ["dna-quote.ace"        :ace]
+   ["dna-colon.ace"        :ace]
+   ["peptide-quote.ace"    :ace]
+   ["peptide-colon.ace"    :ace]
+   ["protein-quote.ace"    :ace]
+   ["protein-colon.ace"    :ace]
+   ["sequence-quote.ace"   :ace]
+   ["sequence-colon.ace"   :ace]
+   ["test.ace"             :ace]
+   ["blastp2215.blast"     :blast]
+   ["bug2246.blast"        :blast]
+   ["frac_problems.blast"  :blast]
+   ["frac_problems2.blast" :blast]
+   ["frac_problems3.blast" :blast]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
