@@ -8,6 +8,14 @@
   (with-open [r (resource-reader path)]
     (identify r)))
 
-(deftest perl-test
-  (testing "Perl script identification"
-    (is (= :perl (parse-test-file "foo.pl")))))
+(defn- test-file-type-identification
+  [[path expected]]
+  (testing (str path " identified as " expected)
+    (is (= expected (parse-test-file path)))))
+
+(def ^:private tests
+  [["foo.csh" :csh]
+   ["foo.pl"  :perl]])
+
+(deftest file-type-identification
+  (dorun (map test-file-type-identification tests)))
