@@ -1,7 +1,13 @@
 (ns heuristomancer.core-test
-  (:use clojure.test
-        heuristomancer.core))
+  (:use [clojure.test]
+        [heuristomancer.core]
+        [heuristomancer.loader :only [resource-reader]]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(defn- parse-test-file
+  [path]
+  (with-open [r (resource-reader path)]
+    (identify r)))
+
+(deftest perl-test
+  (testing "Perl script identification"
+    (is (= :perl (parse-test-file "foo.pl")))))
