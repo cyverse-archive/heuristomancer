@@ -44,7 +44,8 @@
    ["longnames.aln"        :clustalw]
    ["mini-align.aln"       :clustalw]
    ["pep-266.aln"          :clustalw]
-   ["testaln.aln"          :clustalw]])
+   ["testaln.aln"          :clustalw]
+   ["foo.codata"           :codata]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))

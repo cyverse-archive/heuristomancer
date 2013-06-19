@@ -7,4 +7,5 @@
  [:ace      "ebnf/ace.ebnf"]
  [:blast    "ebnf/blast.ebnf"]
  [:bowtie   "ebnf/bowtie.ebnf"]
- [:clustalw "ebnf/clustal.ebnf"]]
+ [:clustalw "ebnf/clustal.ebnf"]
+ [:codata   "ebnf/codata.ebnf"]]
