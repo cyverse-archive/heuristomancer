@@ -35,7 +35,9 @@
    ["bug2246.blast"        :blast]
    ["frac_problems.blast"  :blast]
    ["frac_problems2.blast" :blast]
-   ["frac_problems3.blast" :blast]])
+   ["frac_problems3.blast" :blast]
+   ["foo.bowtie"           :bowtie]
+   ["test.bowtie"          :bowtie]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))

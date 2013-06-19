@@ -5,4 +5,5 @@
  [:perl   "ebnf/perl.ebnf"]
  [:python "ebnf/python.ebnf"]
  [:ace    "ebnf/ace.ebnf"]
- [:blast  "ebnf/blast.ebnf"]]
+ [:blast  "ebnf/blast.ebnf"]
+ [:bowtie "ebnf/bowtie.ebnf"]]
