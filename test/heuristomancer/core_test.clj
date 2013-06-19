@@ -37,7 +37,14 @@
    ["frac_problems2.blast" :blast]
    ["frac_problems3.blast" :blast]
    ["foo.bowtie"           :bowtie]
-   ["test.bowtie"          :bowtie]])
+   ["test.bowtie"          :bowtie]
+   ["foo.clustalw"         :clustalw]
+   ["T7.aln"               :clustalw]
+   ["hs_owlmonkey.aln"     :clustalw]
+   ["longnames.aln"        :clustalw]
+   ["mini-align.aln"       :clustalw]
+   ["pep-266.aln"          :clustalw]
+   ["testaln.aln"          :clustalw]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
