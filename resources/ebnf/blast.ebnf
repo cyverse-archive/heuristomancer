@@ -1,1 +1,1 @@
-S = #"[\p{Upper}]*\s*BLAST.*\[.*\]\n.*"
+S = #"\p{Upper}*BLAST[\s\S]*\[.*\][\s\S]+"
