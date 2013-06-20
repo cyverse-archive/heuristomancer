@@ -12,4 +12,5 @@
  [:embl     "ebnf/embl.ebnf"]
  [:fasta    "ebnf/fasta.ebnf"]
  [:fastq    "ebnf/fastq.ebnf"]
- [:fastxy   "ebnf/fastxy.ebnf"]]
+ [:fastxy   "ebnf/fastxy.ebnf"]
+ [:game     "ebnf/game.ebnf"]]
