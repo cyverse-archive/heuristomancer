@@ -62,7 +62,8 @@
    ["testaln.fastq"           :fastq]
    ["foo-xy.fastxy"           :fastxy]
    ["foo-a.fastxy"            :fastxy]
-   ["test.game"               :game]])
+   ["test.game"               :game]
+   ["test.gcg"                :gcg]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
