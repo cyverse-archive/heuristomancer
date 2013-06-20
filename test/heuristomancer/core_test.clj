@@ -74,6 +74,7 @@
    ["test.gcgblast"           :gcgblast]
    ["test.gcgfasta"           :gcgfasta]
    ["test.genbank"            :genbank]
+   ["dna.genbank"             :genbank]
    ["genomic-seq.genscan"     :genscan]
    ["no-genes.genscan"        :genscan]])
 
