@@ -16,4 +16,6 @@
  [:game     "ebnf/game.ebnf"]
  [:gcg      "ebnf/gcg.ebnf"]
  [:gcgblast "ebnf/gcgblast.ebnf"]
+ [:gcgfasta "ebnf/gcgfasta.ebnf"]
+ [:genbank  "ebnf/genbank.ebnf"]
  [:csv      "ebnf/csv.ebnf"]]

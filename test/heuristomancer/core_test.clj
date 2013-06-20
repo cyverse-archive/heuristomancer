@@ -71,7 +71,9 @@
    ["empty_last_record.csv"   :csv]
    ["partial_last_record.csv" :csv]
    ["partial_quote_field.csv" :csv]
-   ["test.gcgblast"           :gcgblast]])
+   ["test.gcgblast"           :gcgblast]
+   ["test.gcgfasta"           :gcgfasta]
+   ["test.genbank"            :genbank]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
