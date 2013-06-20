@@ -20,6 +20,13 @@
     (binding [*read-eval* false]
       (read r))))
 
+(defn get-parser
+  "Loads the parser with the given format name."
+  [format-name]
+  (let [resource-path (second (first (filter (fn [[k _]] (= k format-name)) (load-grammar-list))))]
+    (when-not (nil? resource-path)
+      (insta/parser (slurp (resource-reader resource-path))))))
+
 (defn- load-parser
   "Loads a single parser for a format name and resource path."
   [[format-name resource-path]]

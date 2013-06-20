@@ -59,7 +59,9 @@
    ["test.fastq"              :fastq]
    ["test_clear_range.fastq"  :fastq]
    ["test_singlets.cns.fastq" :fastq]
-   ["testaln.fastq"           :fastq]])
+   ["testaln.fastq"           :fastq]
+   ["foo-xy.fastxy"           :fastxy]
+   ["foo-a.fastxy"            :fastxy]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
