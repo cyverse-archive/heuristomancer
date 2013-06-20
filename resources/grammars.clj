@@ -15,4 +15,5 @@
  [:fastxy   "ebnf/fastxy.ebnf"]
  [:game     "ebnf/game.ebnf"]
  [:gcg      "ebnf/gcg.ebnf"]
+ [:gcgblast "ebnf/gcgblast.ebnf"]
  [:csv      "ebnf/csv.ebnf"]]

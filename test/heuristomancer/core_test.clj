@@ -70,7 +70,8 @@
    ["no_trailing_newline.csv" :csv]
    ["empty_last_record.csv"   :csv]
    ["partial_last_record.csv" :csv]
-   ["partial_quote_field.csv" :csv]])
+   ["partial_quote_field.csv" :csv]
+   ["test.gcgblast"           :gcgblast]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
