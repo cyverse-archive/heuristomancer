@@ -76,7 +76,11 @@
    ["test.genbank"            :genbank]
    ["dna.genbank"             :genbank]
    ["genomic-seq.genscan"     :genscan]
-   ["no-genes.genscan"        :genscan]])
+   ["no-genes.genscan"        :genscan]
+   ["HUMBETGLOA.gff"          :gff]
+   ["hg16_chroms.gff"         :gff]
+   ["myco_sites.gff"          :gff]
+   ["test.gff"                :gff]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))

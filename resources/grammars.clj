@@ -19,4 +19,5 @@
  [:gcgfasta "ebnf/gcgfasta.ebnf"]
  [:genbank  "ebnf/genbank.ebnf"]
  [:genscan  "ebnf/genscan.ebnf"]
+ [:gff      "ebnf/gff.ebnf"]
  [:csv      "ebnf/csv.ebnf"]]
