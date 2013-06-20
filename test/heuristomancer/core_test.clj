@@ -63,7 +63,14 @@
    ["foo-xy.fastxy"           :fastxy]
    ["foo-a.fastxy"            :fastxy]
    ["test.game"               :game]
-   ["test.gcg"                :gcg]])
+   ["test.gcg"                :gcg]
+   ["foo.csv"                 :csv]
+   ["embedded_newlines.csv"   :csv]
+   ["no_quotes.csv"           :csv]
+   ["no_trailing_newline.csv" :csv]
+   ["empty_last_record.csv"   :csv]
+   ["partial_last_record.csv" :csv]
+   ["partial_quote_field.csv" :csv]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
