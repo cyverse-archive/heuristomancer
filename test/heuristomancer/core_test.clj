@@ -73,7 +73,9 @@
    ["partial_quote_field.csv" :csv]
    ["test.gcgblast"           :gcgblast]
    ["test.gcgfasta"           :gcgfasta]
-   ["test.genbank"            :genbank]])
+   ["test.genbank"            :genbank]
+   ["genomic-seq.genscan"     :genscan]
+   ["no-genes.genscan"        :genscan]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
