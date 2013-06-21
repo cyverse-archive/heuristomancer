@@ -1,5 +1,5 @@
 S = ID_LINE SEQ_LINE+ #"[\s\S]+"
 
-ID_LINE = #"@.*\r?\n"
+ID_LINE = #"@.*\r?(?:\r|\r?\n)"
 
-SEQ_LINE = #"(?i)[A-IK-NP-Z]+\r?\n"
+SEQ_LINE = #"(?i)[A-IK-NP-Z]+\r?(?:\r|\r?\n)"
