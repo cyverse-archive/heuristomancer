@@ -20,6 +20,7 @@
  [:genscan  "ebnf/genscan.ebnf"]
  [:gff      "ebnf/gff.ebnf"]
  [:hmmer    "ebnf/hmmer.ebnf"]
+ [:mase     "ebnf/mase.ebnf"]
  [:pir      "ebnf/pir.ebnf"]
  [:csv      "ebnf/csv.ebnf"]
  [:fasta    "ebnf/fasta.ebnf"]
