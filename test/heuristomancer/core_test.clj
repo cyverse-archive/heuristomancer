@@ -105,7 +105,10 @@
    ["test.prodom"             :prodom]
    ["testaln.prodom"          :prodom]
    ["test.selex"              :selex]
-   ["testaln.selex"           :selex]])
+   ["testaln.selex"           :selex]
+   ["bug2335.fastq"           :fastq]
+   ["error_diff_ids.fastq"    :fastq]
+   ["error_double_qual.fastq" :fastq]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
