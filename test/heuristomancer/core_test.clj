@@ -93,7 +93,8 @@
    ["test3.mase"              :mase]
    ["test.mega"               :mega]
    ["test.msf"                :msf]
-   ["test.rsf"                :rsf]])
-
+   ["test.rsf"                :rsf]
+   ["test.vcf"                :vcf]])
+   
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
