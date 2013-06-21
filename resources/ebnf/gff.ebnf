@@ -22,11 +22,11 @@ partial-score-line = (
 
 comment = #"#[^\r\n]*"
 
-seqname = #"[^\t]+"
+seqname = #"[^\t\r\n]+"
 
-source = #"[^\t]+"
+source = #"[^\t\r\n]+"
 
-feature = #"[^\t]+"
+feature = #"[^\t\r\n]+"
 
 start = #"\d+"
 
