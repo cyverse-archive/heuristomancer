@@ -80,7 +80,10 @@
    ["HUMBETGLOA.gff"          :gff]
    ["hg16_chroms.gff"         :gff]
    ["myco_sites.gff"          :gff]
-   ["test.gff"                :gff]])
+   ["test.gff"                :gff]
+   ["dna.phylip"              :phylip]
+   ["dna.pir"                 :pir]
+   ["protein.pir"             :pir]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
