@@ -99,10 +99,13 @@
    ["testaln.msf"             :msf]
    ["test.rsf"                :rsf]
    ["test.vcf"                :vcf]
+   ["example.vcf"             :vcf]
    ["test.stockholm"          :stockholm]
    ["test.swiss"              :swiss]
    ["test.prodom"             :prodom]
-   ["test.selex"              :selex]])
+   ["testaln.prodom"          :prodom]
+   ["test.selex"              :selex]
+   ["testaln.selex"           :selex]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
