@@ -87,6 +87,7 @@
    ["test.raw"                :raw]
    ["test2.raw"               :raw]
    ["test.hmmer"              :hmmer]
+   ["L77119.hmmer"            :hmmer]
    ["test.mase"               :mase]])
 
 (deftest file-type-identification
