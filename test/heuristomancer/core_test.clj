@@ -88,7 +88,9 @@
    ["test2.raw"               :raw]
    ["test.hmmer"              :hmmer]
    ["L77119.hmmer"            :hmmer]
-   ["test.mase"               :mase]])
+   ["test.mase"               :mase]
+   ["test2.mase"              :mase]
+   ["test3.mase"              :mase]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
