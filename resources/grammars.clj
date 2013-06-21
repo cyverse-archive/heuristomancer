@@ -19,6 +19,7 @@
  [:genbank  "ebnf/genbank.ebnf"]
  [:genscan  "ebnf/genscan.ebnf"]
  [:gff      "ebnf/gff.ebnf"]
+ [:hmmer    "ebnf/hmmer.ebnf"]
  [:pir      "ebnf/pir.ebnf"]
  [:csv      "ebnf/csv.ebnf"]
  [:fasta    "ebnf/fasta.ebnf"]

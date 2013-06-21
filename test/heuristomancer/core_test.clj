@@ -85,7 +85,8 @@
    ["dna.pir"                 :pir]
    ["protein.pir"             :pir]
    ["test.raw"                :raw]
-   ["test2.raw"               :raw]])
+   ["test2.raw"               :raw]
+   ["test.hmmer"              :hmmer]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
