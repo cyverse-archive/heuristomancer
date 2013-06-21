@@ -91,7 +91,8 @@
    ["test.mase"               :mase]
    ["test2.mase"              :mase]
    ["test3.mase"              :mase]
-   ["test.mega"               :mega]])
+   ["test.mega"               :mega]
+   ["test.msf"                :msf]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))

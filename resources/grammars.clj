@@ -22,6 +22,7 @@
  [:hmmer    "ebnf/hmmer.ebnf"]
  [:mase     "ebnf/mase.ebnf"]
  [:mega     "ebnf/mega.ebnf"]
+ [:msf      "ebnf/msf.ebnf"]
  [:pir      "ebnf/pir.ebnf"]
  [:csv      "ebnf/csv.ebnf"]
  [:fasta    "ebnf/fasta.ebnf"]
