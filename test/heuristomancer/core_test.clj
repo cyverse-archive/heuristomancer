@@ -95,7 +95,8 @@
    ["test.msf"                :msf]
    ["test.rsf"                :rsf]
    ["test.vcf"                :vcf]
-   ["test.stockholm"          :stockholm]])
+   ["test.stockholm"          :stockholm]
+   ["test.swiss"              :swiss]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
