@@ -96,7 +96,9 @@
    ["test.rsf"                :rsf]
    ["test.vcf"                :vcf]
    ["test.stockholm"          :stockholm]
-   ["test.swiss"              :swiss]])
+   ["test.swiss"              :swiss]
+   ["test.prodom"             :prodom]
+   ["test.selex"              :selex]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))

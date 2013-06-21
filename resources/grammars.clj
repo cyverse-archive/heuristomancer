@@ -27,6 +27,8 @@
  [:rsf       "ebnf/rsf.ebnf"]
  [:stockholm "ebnf/stockholm.ebnf"]
  [:swiss     "ebnf/swiss.ebnf"]
+ [:prodom    "ebnf/prodom.ebnf"]
+ [:selex     "ebnf/selex.ebnf"]
  [:pir       "ebnf/pir.ebnf"]
  [:csv       "ebnf/csv.ebnf"]
  [:fasta     "ebnf/fasta.ebnf"]
