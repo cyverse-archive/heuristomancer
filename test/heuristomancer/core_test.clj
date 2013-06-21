@@ -94,7 +94,8 @@
    ["test.mega"               :mega]
    ["test.msf"                :msf]
    ["test.rsf"                :rsf]
-   ["test.vcf"                :vcf]])
-   
+   ["test.vcf"                :vcf]
+   ["test.stockholm"          :stockholm]])
+
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
