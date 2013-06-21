@@ -22,4 +22,5 @@
  [:pir      "ebnf/pir.ebnf"]
  [:csv      "ebnf/csv.ebnf"]
  [:fasta    "ebnf/fasta.ebnf"]
- [:phylip   "ebnf/phylip.ebnf"]]
+ [:phylip   "ebnf/phylip.ebnf"]
+ [:raw      "ebnf/raw.ebnf"]]

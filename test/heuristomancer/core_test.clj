@@ -83,7 +83,9 @@
    ["test.gff"                :gff]
    ["dna.phylip"              :phylip]
    ["dna.pir"                 :pir]
-   ["protein.pir"             :pir]])
+   ["protein.pir"             :pir]
+   ["test.raw"                :raw]
+   ["test2.raw"               :raw]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
