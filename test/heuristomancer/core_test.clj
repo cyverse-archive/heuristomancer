@@ -126,7 +126,9 @@
    ["leaf-names.newick"       :newick]
    ["nh-outtree.newick"       :newick]
    ["no-names.newick"         :newick]
-   ["leaf-root.newick"        :newick]])
+   ["leaf-root.newick"        :newick]
+   ["big-tree.newick"         :newick]
+   ["ninja.newick"            :newick]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
