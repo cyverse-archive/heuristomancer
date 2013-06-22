@@ -32,6 +32,7 @@
  [:newick    "ebnf/newick.ebnf"]
  [:pir       "ebnf/pir.ebnf"]
  [:csv       "ebnf/csv.ebnf"]
+ [:gde       "ebnf/gde.ebnf"]
  [:fasta     "ebnf/fasta.ebnf"]
  [:phylip    "ebnf/phylip.ebnf"]
  [:raw       "ebnf/raw.ebnf"]]

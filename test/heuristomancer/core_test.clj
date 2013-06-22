@@ -128,7 +128,8 @@
    ["no-names.newick"         :newick]
    ["leaf-root.newick"        :newick]
    ["big-tree.newick"         :newick]
-   ["ninja.newick"            :newick]])
+   ["ninja.newick"            :newick]
+   ["gde.txt"                 :gde]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
