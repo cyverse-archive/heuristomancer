@@ -29,6 +29,7 @@
  [:swiss     "ebnf/swiss.ebnf"]
  [:prodom    "ebnf/prodom.ebnf"]
  [:selex     "ebnf/selex.ebnf"]
+ [:newick    "ebnf/newick.ebnf"]
  [:pir       "ebnf/pir.ebnf"]
  [:csv       "ebnf/csv.ebnf"]
  [:fasta     "ebnf/fasta.ebnf"]

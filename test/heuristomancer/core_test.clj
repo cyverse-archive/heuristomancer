@@ -108,7 +108,25 @@
    ["testaln.selex"           :selex]
    ["bug2335.fastq"           :fastq]
    ["error_diff_ids.fastq"    :fastq]
-   ["error_double_qual.fastq" :fastq]])
+   ["error_double_qual.fastq" :fastq]
+   ["sample1.newick"          :newick]
+   ["abr-distance.newick"     :newick]
+   ["all-distance.newick"     :newick]
+   ["all-named.newick"        :newick]
+   ["cmt-begin.newick"        :newick]
+   ["cmt-begin-words.newick"  :newick]
+   ["cmt-end.newick"          :newick]
+   ["cmt-end-words.newick"    :newick]
+   ["cmt-middle.newick"       :newick]
+   ["cmt-middle-words.newick" :newick]
+   ["cmt-line-begin.newick"   :newick]
+   ["cmt-line-end.newick"     :newick]
+   ["dist-all-names.newick"   :newick]
+   ["dist-leaf-names.newick"  :newick]
+   ["leaf-names.newick"       :newick]
+   ["nh-outtree.newick"       :newick]
+   ["no-names.newick"         :newick]
+   ["leaf-root.newick"        :newick]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
