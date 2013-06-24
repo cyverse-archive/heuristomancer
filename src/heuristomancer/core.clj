@@ -39,6 +39,7 @@
      (identify-sample (sip in sample-size))))
 
 (defn parse-args
+  "Parses the command-line arguments."
   [args]
   (cli args
        ["-l" "--list" "List recognized file types." :default false :flag true]
@@ -47,10 +48,12 @@
        ["-h" "-?" "--help" "Show help." :default false :flag true]))
 
 (defn list-formats
+  "Lists all of the formats currently recognized by this utility."
   []
   (dorun (map (comp println name first) formats)))
 
 (defn show-file-type
+  "Shows the type of a single file or 'UNRECOGNIZED' if the file type can't be identified."
   [sample-size path]
   (let [type (identify path sample-size)]
     (if (nil? type)
@@ -58,6 +61,7 @@
       (println path "-" (name type)))))
 
 (defn show-file-types
+  "Shows the types of a sequence of files."
   [sample-size paths]
   (dorun (map (partial show-file-type sample-size) paths)))
 
