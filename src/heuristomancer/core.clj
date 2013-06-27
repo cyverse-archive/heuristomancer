@@ -52,6 +52,12 @@
   []
   (dorun (map (comp println name first) formats)))
 
+(defn supported-formats
+  "Returns a list of the formats currently recognized by heuristomancer. Returns the list
+   in the order of evaluation when iterating over the parsers when attempting to id a file."
+  []
+  (mapv (comp name first) formats))
+
 (defn show-file-type
   "Shows the type of a single file or 'UNRECOGNIZED' if the file type can't be identified."
   [sample-size path]
