@@ -129,6 +129,9 @@
    ["leaf-root.newick"        :newick]
    ["big-tree.newick"         :newick]
    ["ninja.newick"            :newick]
+   ["test.nexus"              :nexus]
+   ["test.phyloxml"           :phyloxml]
+   ["treebase-record.xml"     :nexml]
    ["gde.txt"                 :gde]])
 
 (deftest file-type-identification
