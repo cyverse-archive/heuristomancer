@@ -35,6 +35,7 @@
  [:selex     "ebnf/selex.ebnf"]
  [:pir       "ebnf/pir.ebnf"]
  [:csv       "ebnf/csv.ebnf"]
+ [:tsv       "ebnf/tsv.ebnf"]
  [:gde       "ebnf/gde.ebnf"]
  [:fasta     "ebnf/fasta.ebnf"]
  [:phylip    "ebnf/phylip.ebnf"]
