@@ -22,4 +22,4 @@ ESCAPED_DQUOTE = #'""'
 
 TEXTDATA = #'[^,\r\n"]+'
 
-EOL = #"(?:\r|\r?\n)"
+EOL = #"(?:\r\n|\r|\n)"

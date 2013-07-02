@@ -64,6 +64,7 @@
    ["foo-a.fastxy"            :fastxy]
    ["test.game"               :game]
    ["test.gcg"                :gcg]
+   ["aquilegia-traits.csv"    :csv]
    ["foo.csv"                 :csv]
    ["embedded_newlines.csv"   :csv]
    ["no_quotes.csv"           :csv]

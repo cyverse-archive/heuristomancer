@@ -40,4 +40,4 @@ frame = #"[012.]"
 
 attributes = #"[^#\t\r\n]+"
 
-EOL = #"(?:\r|\r?\n)"
+EOL = #"(?:\r\n|\r|\n)"

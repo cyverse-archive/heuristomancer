@@ -1,6 +1,6 @@
 S = (id-line sequence)+
 
-id-line = "%" seq-id #"\s+" seq-desc #"(?:\r|\r?\n)"
+id-line = "%" seq-id #"\s+" seq-desc #"(?:\r\n|\r|\n)"
 
 sequence = #"[-a-ik-np-z\s]+"
 

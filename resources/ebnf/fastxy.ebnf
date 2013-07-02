@@ -6,4 +6,4 @@ VERSION_LINE = #"^ version \d+"
 
 ARBITRARY_DATA = #"[\s\S]*"
 
-EOL = #"(?:\r|\r?\n)"
+EOL = #"(?:\r\n|\r|\n)"
