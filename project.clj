@@ -9,4 +9,6 @@
                  [org.clojure/tools.logging "0.2.6"]
                  [instaparse "1.2.0-SNAPSHOT"]]
   :aot [heuristomancer.core]
-  :main heuristomancer.core)
+  :main heuristomancer.core
+  :repositories [["iplantCollaborative"
+                  "http://projects.iplantcollaborative.org/archiva/repository/internal/"]])
