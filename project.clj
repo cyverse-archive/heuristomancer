@@ -7,7 +7,7 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/tools.cli "0.2.2"]
                  [org.clojure/tools.logging "0.2.6"]
-                 [instaparse "1.2.0-SNAPSHOT"]]
+                 [instaparse "1.2.1"]]
   :aot [heuristomancer.core]
   :main heuristomancer.core
   :repositories [["iplantCollaborative"
