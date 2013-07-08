@@ -16,7 +16,9 @@
   (with-open [r (reader in)]
     (let [buf (char-array limit)
           len (.read r buf 0 limit)]
-      (String. buf 0 len))))
+      (if (= len -1)  ; EOF
+        ""
+        (String. buf 0 len)))))
 
 (defn format-matches
   "Determines whether a format matches a sample from a file."
