@@ -4,6 +4,7 @@
  [:bash      "ebnf/bash.ebnf"]
  [:perl      "ebnf/perl.ebnf"]
  [:python    "ebnf/python.ebnf"]
+ [:pdf       "ebnf/pdf.ebnf"]
  [:nexus     "ebnf/nexus.ebnf"]
  [:phyloxml  "ebnf/phyloxml.ebnf"]
  [:newick    "ebnf/newick.ebnf"]

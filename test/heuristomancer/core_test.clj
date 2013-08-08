@@ -141,7 +141,9 @@
    ["test.nexus"              :nexus]
    ["test.phyloxml"           :phyloxml]
    ["treebase-record.xml"     :nexml]
-   ["gde.txt"                 :gde]])
+   ["gde.txt"                 :gde]
+   ["mathcs.pdf"              :pdf]
+   ["species_tree.pdf"        :pdf]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
