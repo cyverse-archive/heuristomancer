@@ -13,6 +13,13 @@
       (.getResourceAsStream resource-name)
       (reader)))
 
+(defn resource-stream
+  "Obtains an input stream for a named resource."
+  [resource-name]
+  (-> (Thread/currentThread)
+    (.getContextClassLoader)
+    (.getResourceAsStream resource-name)))
+
 (defn- load-grammar-list
   "Loads the list of format names and grammars from the grammar list file."
   []

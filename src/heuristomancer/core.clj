@@ -34,8 +34,9 @@
   (String. bytes))
 
 (defn sip
-  [in limit]
-  (with-open [r in]
+  "Reads in 'limit' number of bytes from input-stream. Returns a byte-array."
+  [input-stream limit]
+  (with-open [r input-stream]
     (let [buf (byte-array limit)
           len (.read r buf 0 limit)]
       (if (= len -1)  ; EOF
@@ -86,7 +87,7 @@
 (defn show-file-type
   "Shows the type of a single file or 'UNRECOGNIZED' if the file type can't be identified."
   [sample-size path]
-  (let [type (identify path sample-size)]
+  (let [type (identify (input-stream path) sample-size)]
     (if (nil? type)
       (println path "- UNRECOGNIZED")
       (println path "-" (name type)))))

@@ -1,12 +1,13 @@
 (ns heuristomancer.core-test
   (:use [clojure.test]
+        [clojure.java.io :only [input-stream]]
         [heuristomancer.core]
-        [heuristomancer.loader :only [resource-reader]]))
+        [heuristomancer.loader :only [resource-reader resource-stream]]))
 
 (defn- parse-test-file
   "Parses a test file and returns the result."
   [path]
-  (with-open [r (resource-reader path)]
+  (with-open [r (resource-stream path)]
     (identify r)))
 
 (defn- test-file-type-identification
