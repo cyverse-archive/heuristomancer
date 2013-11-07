@@ -1,29 +1,52 @@
 (ns heuristomancer.core
   (:gen-class)
-  (:use [clojure.java.io :only [reader]]
+  (:use [clojure.java.io :only [reader input-stream]]
         [clojure.tools.cli :only [cli]]
         [heuristomancer.loader :only [load-parsers]])
-  (:require [instaparse.core :as insta]))
+  (:require [instaparse.core :as insta]
+            [clojure.string :as string])
+  (:import [java.util.zip GZIPInputStream]
+           [java.io ByteArrayInputStream]))
 
 (def ^:private default-sample-size
   "The default sample size to use."
   1000)
 
+(defmulti bytes->string
+  "Converts a byte array to a string depending on the type of parser."
+  (fn [converter sample] converter))
+
+(defmethod bytes->string :gzip
+  [converter bytes]
+  (try
+    (let [bis   (ByteArrayInputStream. bytes)
+          gis   (GZIPInputStream. bis)
+          limit (count bytes)
+          buf   (byte-array limit)
+          len   (.read gis buf 0 limit)]
+      (if (= len -1)
+        ""
+        (string/join " " (map str buf))))
+    (catch Exception e "")))
+
+(defmethod bytes->string nil
+  [converter bytes]
+  (String. bytes))
+
 (defn sip
-  "Loads up to a maximum number of characters from anything that clojure.java.io/reader can
-   convert to a reader."
   [in limit]
-  (with-open [r (reader in)]
-    (let [buf (char-array limit)
+  (with-open [r in]
+    (let [buf (byte-array limit)
           len (.read r buf 0 limit)]
       (if (= len -1)  ; EOF
         ""
-        (String. buf 0 len)))))
+        buf))))
 
 (defn format-matches
   "Determines whether a format matches a sample from a file."
-  [sample [_ identifier-fn]]
-  (not (insta/failure? (identifier-fn sample))))
+  [sample [_ identifier-fn converter]]
+  (let [sample-str    (bytes->string converter sample)]
+    (not (insta/failure? (identifier-fn sample-str)))))
 
 (def formats (load-parsers))
 

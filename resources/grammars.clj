@@ -1,4 +1,5 @@
-[[:csh       "ebnf/csh.ebnf"]
+[[:bam       "ebnf/bam.ebnf"      :gzip]
+ [:csh       "ebnf/csh.ebnf"]
  [:tcsh      "ebnf/tcsh.ebnf"]
  [:sh        "ebnf/sh.ebnf"]
  [:bash      "ebnf/bash.ebnf"]

@@ -20,17 +20,22 @@
     (binding [*read-eval* false]
       (read r))))
 
+(defn- slurpee
+  "Slurps in a parser that's stored as a resource."
+  [resource-path]
+  (insta/parser (slurp (resource-reader resource-path))))
+
 (defn get-parser
   "Loads the parser with the given format name."
   [format-name]
   (let [resource-path (second (first (filter (fn [[k _]] (= k format-name)) (load-grammar-list))))]
     (when-not (nil? resource-path)
-      (insta/parser (slurp (resource-reader resource-path))))))
+      (slurpee resource-path))))
 
 (defn- load-parser
   "Loads a single parser for a format name and resource path."
-  [[format-name resource-path]]
-  (vector format-name (insta/parser (slurp (resource-reader resource-path)))))
+  [[format-name resource-path sip-selector]]
+  (vector format-name (slurpee resource-path) sip-selector))
 
 (defn load-parsers
   "Loads the list of parsers to try when identifying file types."
