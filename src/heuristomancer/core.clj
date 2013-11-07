@@ -41,7 +41,7 @@
           len (.read r buf 0 limit)]
       (if (= len -1)  ; EOF
         ""
-        buf))))
+        (byte-array (take len buf))))))
 
 (defn format-matches
   "Determines whether a format matches a sample from a file."
