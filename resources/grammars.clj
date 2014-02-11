@@ -1,4 +1,6 @@
 [[:bam       "ebnf/bam.ebnf"      :gzip]
+ [:jar       "ebnf/jar.ebnf"]
+ [:zip       "ebnf/zip.ebnf"]
  [:csh       "ebnf/csh.ebnf"]
  [:tcsh      "ebnf/tcsh.ebnf"]
  [:sh        "ebnf/sh.ebnf"]
