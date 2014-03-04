@@ -1,4 +1,4 @@
-(defproject org.iplantc/heuristomancer "0.1.3"
+(defproject org.iplantc/heuristomancer "0.1.4"
   :description "Clojure library for attempting to guess file types."
   :url "http://www.iplantcollaborative.org"
   :license {:name "BSD Standard License"

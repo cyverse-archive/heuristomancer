@@ -144,7 +144,10 @@
    ["treebase-record.xml"     :nexml]
    ["gde.txt"                 :gde]
    ["mathcs.pdf"              :pdf]
-   ["species_tree.pdf"        :pdf]])
+   ["species_tree.pdf"        :pdf]
+   ["8080.faa"                :fasta]
+   ["some.jar"                :jar]
+   ["example.zip"             :zip]])
 
 (deftest file-type-identification
   (dorun (map test-file-type-identification tests)))
